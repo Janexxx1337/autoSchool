@@ -1,0 +1,223 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.tt-select {
+    position: relative;
+    height: auto;
+    padding: 0px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.tt-select select {
+    display: none;
+}
+.select-selected {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.8) !important;
+}
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+}
+.select-selected:before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: transparent transparent #000000 transparent;
+    transform: rotate(180deg);
+}
+.select-selected.select-arrow-active:before {
+    border: none;
+}
+
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid #333333;
+    cursor: pointer;
+    width: 150px;
+}
+.select-items {
+    position: absolute;
+    background-color: #313131;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.select-hide {
+    display: none;
+}
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header__logo {
+    font-size: 35px;
+    color: #000000;
+    margin-left: 30px;
+}
+
+.header-title {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.assortment__items {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.assortment-btn {
+    font-size: 20px;
+    background: #442a9d;
+    color: white;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translateY(-7px);
+    margin-left: 5px;
+    text-align: center;
+    width: 150px;
+}
+
+.about {
+    margin: 0 auto;
+    margin-top: 170px;
+    width: 70%;
+}
+
+.about-title {
+text-align: left;
+}
+
+.about-block {
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.about-subtitle {
+    text-align: right;
+    margin-top: 50px;
+    transform: translateX(-10%);
+}
+
+.about__list {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.variants__school-links {
+    margin: 30px auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.variants__school-cities, .variants__underground, .variants__region,.variants__school-categories {
+    border: 1px solid #442a9d;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.variants__school-links a {
+    color: #000000;
+}
+
+footer {
+    margin: 30px auto;
+    width: 70%;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.footer-terms a{
+margin-right: 20px;
+    color: #000000;
+}
+
+
+
+@media (max-width: 1025px) {
+    .variants__school-links a{
+        font-size: 18px;
+
+    }
+    .variants__school-links {
+        width: 85%;
+    }
+}
+
+@media (max-width: 769px) {
+    .assortment__items {
+        width: 100%;
+    }
+    .variants__school-links a {
+        font-size: 13px;
+    }
+
+    .variants__school-links {
+        width: 95%;
+        line-height: 22px;
+    }
+    footer {
+        margin: 30px 30px ;
+    }
+    .header__logo {
+        font-size: 25px;
+    }
+    .header-title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 525px) {
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .select-items div, .select-selected {
+        width: 80px;
+        font-size: 12px;
+    }
+    .assortment-btn {
+        width: 70px;
+        font-size: 12px;
+    }
+    .assortment-title {
+        font-size: 12px;
+    }
+    .variants__school-cities, .variants__underground, .variants__region,.variants__school-categories{
+        width: 100px;
+    }
+
+}
+
+
+
+
